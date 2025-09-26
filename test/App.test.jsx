@@ -1,37 +1,37 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import App from '../App'
+import App from '../src/App'
 
 // Mock all section components to avoid complex dependencies
-vi.mock('../sections/HeroSection/Hero', () => ({
+vi.mock('../src/sections/HeroSection/Hero', () => ({
   default: () => <div data-testid="hero-section">Hero Section</div>
 }))
 
-vi.mock('../sections/ReactSection/React', () => ({
+vi.mock('../src/sections/ReactSection/React', () => ({
   default: () => <div data-testid="react-section">React Section</div>
 }))
 
-vi.mock('../sections/PythonSection/Python', () => ({
+vi.mock('../src/sections/PythonSection/Python', () => ({
   default: () => <div data-testid="python-section">Python Section</div>
 }))
 
-vi.mock('../sections/JsSection/Js', () => ({
+vi.mock('../src/sections/JsSection/Js', () => ({
   default: () => <div data-testid="js-section">JavaScript Section</div>
 }))
 
-vi.mock('../sections/DevOpsSection/DevOps', () => ({
+vi.mock('../src/sections/DevOpsSection/DevOps', () => ({
   default: () => <div data-testid="devops-section">DevOps Section</div>
 }))
 
-vi.mock('../sections/CollaborativeSection/Collaborative', () => ({
+vi.mock('../src/sections/CollaborativeSection/Collaborative', () => ({
   default: () => <div data-testid="collaborative-section">Collaborative Section</div>
 }))
 
-vi.mock('../sections/ProvenTrackSection/ProvenTrack', () => ({
+vi.mock('../src/sections/ProvenTrackSection/ProvenTrack', () => ({
   default: () => <div data-testid="proven-track-section">Proven Track Section</div>
 }))
 
-vi.mock('../sections/ContactSection/Contact', () => ({
+vi.mock('../src/sections/ContactSection/Contact', () => ({
   default: () => <div data-testid="contact-section">Contact Section</div>
 }))
 

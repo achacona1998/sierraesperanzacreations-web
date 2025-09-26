@@ -1,13 +1,13 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import Hero from '../../sections/HeroSection/Hero'
+import Hero from '../../src/sections/HeroSection/Hero'
 
 // Mock child components
-vi.mock('../../sections/HeroSection/components/Beams', () => ({
+vi.mock('../../src/sections/HeroSection/components/Beams', () => ({
   Beams: () => <div data-testid="beams">Beams</div>
 }))
 
-vi.mock('../../sections/HeroSection/components/boton', () => ({
+vi.mock('../../src/sections/HeroSection/components/boton', () => ({
   default: ({ name, section }) => (
     <button data-testid={`button-${section.toLowerCase()}`}>
       {name}
@@ -15,7 +15,7 @@ vi.mock('../../sections/HeroSection/components/boton', () => ({
   )
 }))
 
-vi.mock('../../sections/HeroSection/components/HeroLogoH', () => ({
+vi.mock('../../src/sections/HeroSection/components/HeroLogoH', () => ({
   default: ({ className }) => (
     <div data-testid="hero-logo-h" className={className}>
       Hero Logo Horizontal
@@ -23,7 +23,7 @@ vi.mock('../../sections/HeroSection/components/HeroLogoH', () => ({
   )
 }))
 
-vi.mock('../../sections/HeroSection/components/HeroLogoV', () => ({
+vi.mock('../../src/sections/HeroSection/components/HeroLogoV', () => ({
   default: ({ className }) => (
     <div data-testid="hero-logo-v" className={className}>
       Hero Logo Vertical
@@ -31,7 +31,7 @@ vi.mock('../../sections/HeroSection/components/HeroLogoV', () => ({
   )
 }))
 
-vi.mock('../../sections/HeroSection/components/texto', () => ({
+vi.mock('../../src/sections/HeroSection/components/texto', () => ({
   default: () => <div data-testid="hero-text">Hero Text</div>
 }))
 

@@ -5,14 +5,14 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: 'jsdom',
-    setupFiles: ['./src/test/setup.js'],
+    setupFiles: ['./test/setup.js'],
     globals: true,
     css: true,
     coverage: {
       reporter: ['text', 'json', 'html'],
       exclude: [
         'node_modules/',
-        'src/test/',
+        'test/',
         '**/*.config.js',
         '**/*.config.ts',
         'dist/',

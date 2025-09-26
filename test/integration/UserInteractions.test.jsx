@@ -1,10 +1,10 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { RedesCard } from '../../sections/ContactSection/components/redes'
+import { RedesCard } from '../../src/sections/ContactSection/components/redes'
 
 // Mock the constants
-vi.mock('../../sections/ContactSection/constants/items', () => ({
+vi.mock('../../src/sections/ContactSection/constants/items', () => ({
   GitHub: [
     { id: 1, name: 'GitHub Profile', link: 'https://github.com/test' },
     { id: 2, name: 'GitHub Projects', link: 'https://github.com/test/projects' }

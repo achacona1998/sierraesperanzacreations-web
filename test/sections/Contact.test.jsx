@@ -1,29 +1,29 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import Contact from '../../sections/ContactSection/Contact'
+import Contact from '../../src/sections/ContactSection/Contact'
 
 // Mock child components
-vi.mock('../../sections/ContactSection/components/canvas', () => ({
+vi.mock('../../src/sections/ContactSection/components/canvas', () => ({
   CanvasAnimation: () => <div data-testid="canvas-animation">Canvas Animation</div>
 }))
 
-vi.mock('../../sections/ContactSection/components/pieDePagina', () => ({
+vi.mock('../../src/sections/ContactSection/components/pieDePagina', () => ({
   PieDePagina: () => <div data-testid="pie-de-pagina">Footer</div>
 }))
 
-vi.mock('../../sections/ContactSection/components/servicios', () => ({
+vi.mock('../../src/sections/ContactSection/components/servicios', () => ({
   ServiciosCard: () => <div data-testid="servicios-card">Services Card</div>
 }))
 
-vi.mock('../../sections/ContactSection/components/recursos', () => ({
+vi.mock('../../src/sections/ContactSection/components/recursos', () => ({
   RecursosCard: () => <div data-testid="recursos-card">Resources Card</div>
 }))
 
-vi.mock('../../sections/ContactSection/components/contacto', () => ({
+vi.mock('../../src/sections/ContactSection/components/contacto', () => ({
   ContactoCard: () => <div data-testid="contacto-card">Contact Card</div>
 }))
 
-vi.mock('../../sections/ContactSection/components/redes', () => ({
+vi.mock('../../src/sections/ContactSection/components/redes', () => ({
   RedesCard: () => <div data-testid="redes-card">Social Networks Card</div>
 }))
 

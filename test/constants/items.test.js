@@ -1,16 +1,16 @@
 import { describe, it, expect } from 'vitest'
-import { Items as ReactItems } from '../../sections/ReactSection/constant/items'
-import { Items as PythonItems } from '../../sections/PythonSection/constant/items'
-import { Items as JsItems } from '../../sections/JsSection/constant/items'
-import { Items as DevOpsItems } from '../../sections/DevOpsSection/constant/items'
-import { Items as CollaborativeItems } from '../../sections/CollaborativeSection/constant/items'
+import { Items as ReactItems } from '../../src/sections/ReactSection/constant/items'
+import { Items as PythonItems } from '../../src/sections/PythonSection/constant/items'
+import { Items as JsItems } from '../../src/sections/JsSection/constant/items'
+import { Items as DevOpsItems } from '../../src/sections/DevOpsSection/constant/items'
+import { Items as CollaborativeItems } from '../../src/sections/CollaborativeSection/constant/items'
 import { 
   OurServices, 
   Resources, 
   Contact, 
   GitHub, 
   Linkedin 
-} from '../../sections/ContactSection/constants/items'
+} from '../../src/sections/ContactSection/constants/items'
 
 describe('React Section Items', () => {
   it('should have correct structure', () => {

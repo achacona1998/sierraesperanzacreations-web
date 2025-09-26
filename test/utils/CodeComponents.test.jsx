@@ -2,8 +2,8 @@ import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { Canvas } from '@react-three/fiber'
 import { Text } from '@react-three/drei'
-import { CodeFragment } from '../../sections/ContactSection/utils/CodeFragment'
-import { CodeAnimation } from '../../sections/ContactSection/utils/CodeAnimation'
+import { CodeFragment } from '../../src/sections/ContactSection/utils/CodeFragment'
+import { CodeAnimation } from '../../src/sections/ContactSection/utils/CodeAnimation'
 
 // Mock Three.js components
 vi.mock('@react-three/fiber', () => ({

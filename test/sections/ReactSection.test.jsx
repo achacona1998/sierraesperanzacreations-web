@@ -1,13 +1,13 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import React from '../../sections/ReactSection/React'
+import React from '../../src/sections/ReactSection/React'
 
 // Mock child components
-vi.mock('../../sections/components/Mantel/Mantel', () => ({
+vi.mock('../../src/sections/components/Mantel/Mantel', () => ({
   default: () => <div data-testid="mantel">Mantel Component</div>
 }))
 
-vi.mock('../../sections/ReactSection/components/texto', () => ({
+vi.mock('../../src/sections/ReactSection/components/texto', () => ({
   default: () => <div data-testid="texto">Texto Component</div>
 }))
 
